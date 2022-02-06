@@ -17,8 +17,8 @@ Author: Kakebe Technologies
 
 :root {
     --otw-pri-color: #c4c4c4;
-    --otw-sec-color: #9eb7f9;
-    --otw-bistre: #593c35;
+    --otw-sec-color: #ffffff;
+    --otw-bistre: #f0eae8;
     --otw-white: #ffff;
     --otw-dark-coral: #D05A4C;
 }
@@ -126,4 +126,14 @@ header {
 .center {
     display: flex;
     align-items: center;
+}
+
+
+/* Login Sections */
+.img-center{
+    margin-top: 160px;
+}
+.vh-100{
+    background-color: #f6eeee;
+
 }

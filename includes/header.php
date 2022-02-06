@@ -10,6 +10,10 @@
     
     <!-- Main stylesheet --> 
     <link rel="stylesheet" href="assets/css/main_style.css">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+   
     
     <!-- Google fonts & icons --> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,6 +27,7 @@
 <body>
     <header class="">
         <div class="header-title">
-            <h5 class="text-white">OTW BROWSER</h5>
+            <img src="images/logobg.png" width="400px" alt="">
+            <!-- <h5 class="text-white">OTW BROWSER</h5> -->
         </div<>
     </header>
