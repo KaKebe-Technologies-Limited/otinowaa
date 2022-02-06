@@ -47,7 +47,11 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">Female</label>
-                            </div>                            
+                            </div>
+                            <div class="col-4">
+                            <label></label>
+                            <input type="date" class="form-control">
+                        </div>                            
                         </div>
                     </div>
                 </form>
