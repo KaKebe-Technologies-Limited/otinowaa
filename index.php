@@ -5,7 +5,7 @@
     <section id="dashboard" class="container col-8">
         <div class="mb-4 pt-4">
             <h4 class="title">Welcome back, Stephen!</h4>
-            <h6>Today is Thursday, 20 January 2023</h6>
+            <h6>Today is Thursday, 20 January 2022</h6>
         </div>
         <div class="row">
             <div class="col d-flex flex-wrap justify-content-center align-items-center">
