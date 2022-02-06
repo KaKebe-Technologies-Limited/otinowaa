@@ -1,0 +1,129 @@
+/*
+Stylesheet name: Main_style
+Author: Kakebe Technologies
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+# Typography
+#Layouts
+#Navigation
+#Components
+
+*/
+
+
+:root {
+    --otw-pri-color: #c4c4c4;
+    --otw-sec-color: #9eb7f9;
+    --otw-bistre: #593c35;
+    --otw-white: #ffff;
+    --otw-dark-coral: #D05A4C;
+}
+
+/*  Typograpghy
+	 ========================================================================== */
+    .text-bold {
+        font-weight: bold;
+    }
+
+    .text-white {
+        color: var(--otw-white);
+    }
+
+/*  Layouts
+	 ========================================================================== */
+
+.container-fluid{
+    overflow: hidden;
+}
+
+/*  Header and sidebar navigation
+	 ========================================================================== */
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--otw-sec-color);
+}
+
+.header-title {
+    padding: 10px;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--otw-pri-color);
+    height: 100vh;
+}
+
+/* Header & sidebar for screen sizes < 768px */
+@media screen and (max-width: 768px) {
+    header {
+        display: none;
+    }
+
+    nav li {
+        display: inline;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+.nav-link {
+    display: flex;
+}
+
+.nav-link span {
+    padding-right: 10px;
+}
+
+
+/*  Components
+	 ========================================================================== */
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    border-radius: 10%;
+    margin: 20px;
+    background-color: var(--otw-pri-color);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.user-dp {
+    padding: 15px 0 15px 0;
+}
+
+.user-dp .material-icons {
+    font-size: 100px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*  Utility classes
+	 ========================================================================== */
+
+.center {
+    display: flex;
+    align-items: center;
+}
