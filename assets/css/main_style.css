@@ -18,9 +18,14 @@ Author: Kakebe Technologies
 :root {
     --otw-pri-color: #c4c4c4;
     --otw-sec-color: #ffffff;
+    --anti-flash-white: #f1f2f7;
     --otw-bistre: #f0eae8;
     --otw-white: #ffff;
     --otw-dark-coral: #D05A4C;
+}
+
+body { 
+    
 }
 
 /*  Typograpghy
@@ -46,6 +51,7 @@ header {
     display: flex;
     justify-content: center;
     background-color: var(--otw-sec-color);
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
 }
 
 .header-title {
@@ -55,8 +61,13 @@ header {
 .sidebar {
     display: flex;
     justify-content: center;
-    background-color: var(--otw-pri-color);
     height: 100vh;
+}
+
+nav {
+    background-color: var(--otw-pri-color);
+    margin: 0;
+    width: inherit;
 }
 
 /* Header & sidebar for screen sizes < 768px */
@@ -119,6 +130,33 @@ header {
     color: #000;
 }
 
+/* Forms */ 
+
+form {
+    padding: 3%;
+}
+
+.form-row {
+    margin-bottom: 3%;
+}
+
+.col-heading {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+label {
+    
+}
+
+input {
+    margin: 10px 0 10px 0;
+}
+
+.search-btn {
+    width: 35%;
+}
 
 /*  Utility classes
 	 ========================================================================== */
@@ -126,6 +164,34 @@ header {
 .center {
     display: flex;
     align-items: center;
+}
+
+/* Width classes */
+.w-45 {
+    width: 45%;
+}
+.w-45-mr-5 {
+    width: 45%;
+    margin-right: 5%;
+}
+
+.w-45-ml-5 {
+    width: 45%;
+    margin-left: 5%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+/* Height classes */ 
+
+.h-39px {
+    height: 39px;
 }
 
 

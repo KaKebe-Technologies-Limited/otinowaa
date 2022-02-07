@@ -26,8 +26,8 @@
 </head>
 <body>
     <header class="">
-        <div class="header-title">
-            <img src="images/logobg.png" width="400px" alt="">
+        <div class="header-title p-2">
+            <img src="images/logobg.png" width="80%" height="70px" alt="">
             <!-- <h5 class="text-white">OTW BROWSER</h5> -->
         </div<>
     </header>
