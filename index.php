@@ -9,22 +9,22 @@
         </div>
         <div class="row">
             <div class="col d-flex flex-wrap justify-content-center align-items-center">
-                <div class="card col-3">
+                <div class="card white-bg col-3">
                     <a class="card-link stretched-link" href="otw_cis.php">CIS</a>
                 </div>
-                <div class="card col-3">
+                <div class="card white-bg col-3">
                     <a class="card-link stretched-link" href="">Redirect One</a>
                 </div>
-                <div class="card col-3">
+                <div class="card white-bg col-3">
                     <a class="card-link stretched-link" href="">Redirect One</a>
                 </div>
-                <div class="card col-3">
+                <div class="card white-bg col-3">
                     <a class="card-link stretched-link" href="">Redirect One</a>
                 </div>
-                <div class="card col-3">
+                <div class="card white-bg col-3">
                     <a class="card-link stretched-link" href="">Redirect One</a>
                 </div>
-                <div class="card col-3">
+                <div class="card white-bg col-3">
                     <a class="card-link stretched-link" href="">Redirect One</a>
                 </div>
             </div>

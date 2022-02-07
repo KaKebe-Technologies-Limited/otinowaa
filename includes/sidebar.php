@@ -1,5 +1,5 @@
 
-    <main class="container-fluid p-0 d-flex">
+
         <div class="sidebar col-sm-2">
             <nav class="nav position-fixed">
                 <div class="container-fluid">
@@ -12,7 +12,7 @@
                         <ul class="list-unstyled flex-column">
                             <li class="nav-item center">
                                 <a class="nav-link text-dark text-bold" href="index.php">
-                                <span class="material-icons">desktop_windows</span>Dashboard</a>
+                                <span class="material-icons">grid_view</span>Dashboard</a>
                             </li>
                             <li class="nav-item">
                                 <div class="center">
