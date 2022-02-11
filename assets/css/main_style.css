@@ -14,13 +14,18 @@ Author: Kakebe Technologies
 
 */
 
-/*  Normalize
+/*  General code
 	 ========================================================================== */
      html {
         scroll-behavior: smooth;
       }
-      
 
+      body {
+        background: var(--anti-flash-white);
+        color: var(--black);
+    }
+/*  Colors
+	 ========================================================================== */
 :root {
     --otw-pri-color: #c4c4c4;
     --otw-sec-color: #ffffff;
@@ -29,14 +34,13 @@ Author: Kakebe Technologies
     --otw-bistre: #f0eae8;
     --otw-white: #ffff;
     --otw-dark-coral: #D05A4C;
+    --black: #1a1a1a;
 }
 
-.white-bg { background-color: var(--otw-sec-color);}
-.dark-coral-bg {background-color: var(--otw-dark-coral);}
+/* Color classes */
+    .white-bg { background-color: var(--otw-sec-color);}
+    .dark-coral-bg {background-color: var(--otw-dark-coral);}
 
-body { 
-    background: var(--anti-flash-white);
-}
 
 /*  Typograpghy
 	 ========================================================================== */
@@ -47,6 +51,7 @@ body {
     .text-white {
         color: var(--otw-white);
     }
+
 
 /*  Layouts
 	 ========================================================================== */
@@ -65,15 +70,36 @@ header {
     border-bottom: 1px solid #ddd;
 }
 
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
 .header-title {
     padding: 10px;
 }
 
-.sidebar {
+#sidebar {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
+    width: 230px;
+    background-color: var(--otw-white);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
+
+.sticky-offset {
+    top: 56px;
+  }
+  .sticky-top {
+    position: -webkit-sticky;
+    position: fixed;
+    /*top: 0; */
+    z-index: 1020;
+  }
 
 nav {
     background-color: var(--otw-sec-color);
@@ -83,7 +109,7 @@ nav {
 
 /* Header & sidebar for screen sizes < 768px */
 @media screen and (max-width: 768px) {
-    header {
+    .header-title {
         display: none;
     }
 
@@ -95,9 +121,17 @@ nav {
         display: block;
     }
 
-    .sidebar {
+    #sidebar {
         display: none;
     }
+}
+
+@media screen and (max-width: 768px) {
+    #mobile-nav { display: block;}
+}
+
+@media screen and (min-width: 768px) {
+    #mobile-nav { display: none;}
 }
 
 .nav-link {
@@ -117,10 +151,24 @@ nav {
       color: var(--otw-dark-coral) !important;
   }
 
+
   .nav-tabs .nav-link .active {
       background-color: var(--otw-dark-coral) !important;
   }
 
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: var(--otw-dark-coral);
+  }
+
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link:hover {
+    color: #fff;
+    ;
+  }
+
+.nav-pills > .nav-item > .nav-link:hover {
+    color: var(--otw-dark-coral) !important;
+}
 
 /*  Components
 	 ========================================================================== */
@@ -150,37 +198,108 @@ nav {
 
 .user-dp .material-icons {
     font-size: 100px;
-    color: var(--otw-dark-coral);
+    color: var(--otw-bistre);
 }
 
 .card-link {
     text-decoration: none;
-    color: #000;
+    color: var(--black);
 }
 
-/* Forms */ 
+/* Forms */
 
 form {
     padding: 3%;
 }
+
+@media screen and (max-width: 768px) {
+    .cis-form {
+        width: 100%;
+    }
+}
+
 
 .form-row {
     margin-bottom: 3%;
 }
 
 .col-heading {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 24px;
 }
 
 label {
-    
+
 }
+
+.form-anchor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.form-group {
+margin-bottom: 20px;
+padding: 4px 0;
+position: relative; }
+.form-block {
+border: 1px solid #cccccc;
+margin-bottom: 8px;
+padding: 8px 12px; }
+
+.input-control {
+background-color: white;
+-webkit-appearance: none;
+border: 1px solid #cccccc;
+font-family: Arial;
+margin-bottom: 8px;
+padding: 8px 4px;
+position: relative;
+width: 100%;
+z-index: 3; }
+.input-control:focus {
+  box-shadow: 0 0 6px rgba(0, 200, 222, 0.25);
+  background-color: #fafafa; }
+
+.label-helper {
+position: absolute;
+opacity: 0;
+transition: .2s bottom, .2s opacity;
+bottom: 0;
+left: 0;
+z-index: 1; }
+
+.input-control:focus + .label-helper, .input-control:invalid + .label-helper {
+bottom: 95%;
+font-family: arial;
+font-size: 14px;
+line-height: 1;
+opacity: 1;
+padding: 4px; }
+.input-control:invalid {
+border-left: 10px solid #f00; }
+.input-control:invalid + .label-helper::after {
+  color: #f00;
+  content: "X";
+  font-family: arial;
+  font-size: 14px;
+  line-height: 1;
+  padding-left: 12px; }
+
+.p {
+text-align: center;
+padding-top: 50px;
+}
+
 
 input {
     margin: 10px 0 10px 0;
+    border-radius: 5px;
 }
+
+
 
 .search-btn {
     width: 35%;
@@ -190,11 +309,53 @@ button {
     color: #fff !important;
 }
 
+.blr-clr {
+    color: var(--black);
+}
+
+.button-hov {
+    padding: 6px 33px:
+    border-color: #5D51DD !important;
+    background-color: transparent !important;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.button-eff {
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+.button-eff:after {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: #5D51DD;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    -webkit-transform: translate(100%);
+    -ms-transform: translate(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transform: 0.5s ease-in-out;
+
+
+}
+
 /*  Utility classes
 	 ========================================================================== */
 .wrapper {
-    margin: 3%;
-    padding: 0 3% 0 3%;
+    margin: 10% 6% 10% 6%;
+    padding: 3%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 .center {
@@ -203,7 +364,9 @@ button {
 }
 
 /* Width classes */
+.w-27 { width: 27%;}
 .w-30 { width: 30%;}
+.w-33 { width: 33%;}
 .w-45 { width: 45%;}
 .w-60 { width: 60%;}
 .w-65 {width: 65%;}
@@ -220,10 +383,16 @@ button {
 }
 
 
-/* Height classes */ 
+/* Height classes */
 
 .h-39px {
     height: 39px;
+}
+
+@media screen and (max-width: 768px) {
+    .p-sm-0 {
+        padding: 0 !important;
+    }
 }
 
 
@@ -235,3 +404,9 @@ button {
     background-color: #f6eeee;
 
 }
+
+/* Display */
+.d-md-block {
+    display: block !important;
+  }
+

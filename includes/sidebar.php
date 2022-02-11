@@ -1,8 +1,7 @@
 
 
-        <div class="sidebar col-sm-2">
-            <nav class="nav position-fixed">
-                <div class="container-fluid">
+        <div id="sidebar" class=" col-2">
+                <ul class="sticky-top sticky-offset">
                     <div class="user-dp">
                         <a class="navbar-brand center d-flex justify-content-center" href="#">
                             <span class="material-icons">account_circle</span>
@@ -23,7 +22,7 @@
                                     <li class="list-unstyled"><a class="dropdown-item" href="otw_cis.php">Add Child</a></li>
                                     <li class="list-unstyled"><a class="dropdown-item" href="view_all.php">View All</a></li>
                                 </ul>
-                            </li> 
+                            </li>
                             <li class="nav-item dropdown">
                                 <div class="center">
                                     <a class="nav-link text-dark text-bold" href="#" role="button" data-bs-toggle="dropdown">
@@ -34,7 +33,7 @@
                                     <li class="list-unstyled"><a class="dropdown-item" href="#">View All</a></li>
                                     <li class="list-unstyled"><a class="dropdown-item" href="#">Roles</a></li>
                                 </ul>
-                            </li> 
+                            </li>
                             <li class="nav-item dropdown">
                                 <div class="center">
                                     <a class="nav-link text-dark text-bold" href="#" role="button" data-bs-toggle="dropdown">
@@ -49,5 +48,4 @@
                         </ul>
                     </div>
                 </div>
-            </nav>
-        </div>
+            </div>
