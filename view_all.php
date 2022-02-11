@@ -1,5 +1,5 @@
 <?php
-    $title = "Login";
+    $title = "View All";
     require("includes/header.php");
 ?>
 <?php include 'includes/sidebar.php'; ?>
