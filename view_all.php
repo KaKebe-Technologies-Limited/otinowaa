@@ -14,7 +14,7 @@
                 <div class="search-btn">
                     <form class="form-inline d-flex align-items-center">
                         <input class="form-control mr-4" style="margin-right: 12px;" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" style= "height: 38px;" type="submit">Search</button>
+                        <button class="btn btn-success my-2 my-sm-0" style= "height: 38px;" type="submit">Search</button>
                     </form>
                 </div>
                 <div class="actions d-flex justify-content-between">

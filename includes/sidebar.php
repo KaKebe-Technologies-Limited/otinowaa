@@ -15,11 +15,11 @@
                             </li>
                             <li class="nav-item">
                                 <div class="center">
-                                    <a class="nav-link text-dark text-bold" href="otw_cis.php" role="button" data-bs-toggle="dropdown">
+                                    <a class="nav-link text-dark text-bold" href="cis.php" role="button" data-bs-toggle="dropdown">
                                     <span class="material-icons">people</span>CIS</a>
                                 </div>
                                 <ul class="">
-                                    <li class="list-unstyled"><a class="dropdown-item" href="otw_cis.php">Add Child</a></li>
+                                    <li class="list-unstyled"><a class="dropdown-item" href="cis.php">Add Child</a></li>
                                     <li class="list-unstyled"><a class="dropdown-item" href="view_all.php">View All</a></li>
                                 </ul>
                             </li>
