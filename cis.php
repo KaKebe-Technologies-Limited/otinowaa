@@ -1,8 +1,13 @@
+<!--Header-->
 <?php
       $title = "CIS";
       require("includes/header.php");
 ?>
-<?php include('includes/sidebar.php'); ?><!-- sidebar -->
+<!--/Header-->
+
+<!--Sidebar-->
+<?php include('includes/sidebar.php'); ?>
+<!--/Sidebar-->
 
 <section class="cis-form d-flex justify-content-center">
     <div class="wrapper col white-bg">

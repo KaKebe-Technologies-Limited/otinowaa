@@ -30,6 +30,8 @@
             <!-- <h5 class="text-white">OTW BROWSER</h5> -->
         </div<>
     </header>
+
+    <!-- Mobile Navigation -->
     <nav id="mobile-nav" class="navbar navbar-light navbar-expand-sm">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.php"><img src="images/logobg.png" width="80%" height="50px" alt=""></a>
@@ -70,4 +72,5 @@
                 </div>
             </div>
         </nav>
+        <!--/Mobile Navigation-->
     <main class="container-fluid p-0 d-flex">

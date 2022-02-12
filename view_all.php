@@ -1,8 +1,13 @@
+<!--Header-->
 <?php
     $title = "View All";
     require("includes/header.php");
 ?>
+<!--/Header-->
+
+<!--Sidebar-->
 <?php include 'includes/sidebar.php'; ?>
+<!--/Sidebar-->
 
 <section class="col">
     <div class="wrapper white-bg pb-5">

@@ -1,5 +1,5 @@
 
-
+        <!--- Sidebar -->
         <div id="sidebar" class=" col-2">
                 <ul class="sticky-top sticky-offset">
                     <div class="user-dp">
@@ -49,3 +49,4 @@
                     </div>
                 </div>
             </div>
+            <!-- Sidebar -->

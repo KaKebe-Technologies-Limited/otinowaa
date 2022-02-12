@@ -1,9 +1,13 @@
-
+<!--Header-->
 <?php
     $title = "Dashboard";
     require("includes/header.php");
 ?>
+<!--/Header-->
+
+<!--Sidebar-->
 <?php include('includes/sidebar.php'); ?>
+<!--/Sidebar-->
 
 <!-- dashboard -->
     <section id="dashboard" class="container col-8 my-4 py-5">
