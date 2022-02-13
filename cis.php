@@ -69,7 +69,7 @@
                     </div>
                     <div class="form-row row gx-5">
                         <div class="d-flex flex-wrap justify-content-between">
-                            <div class="col-sm-12 col-md-3 d-flex flex-column">
+                            <div class="col-sm-12 col-md-5 col-lg-3 d-flex flex-column">
                                 <div class="col-heading">Place of Birth</div>
                                 <div class="mt-4">
                                     <div class="form-group">
@@ -94,7 +94,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-sm-12 col-md-3 d-flex flex-column">
+                            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-3 d-flex flex-column">
                                 <div class="col-heading">Current Residence</div>
                                 <div class="mt-4">
                                     <div class="form-group">
@@ -119,7 +119,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-3 d-flex flex-column">
+                            <div class="col-sm-12 col-md-5 col-lg-3 d-flex flex-column">
                                 <div class="col-heading">Origin</div>
                                 <div class="mt-4">
                                     <div class="form-group">
@@ -381,7 +381,7 @@
                             </div>
                         </div>
                     </div>
-                </form><!-- End of CBC FORM -->
+                </form><!--/CBC FORM -->
             </div>
             <div class="tab-pane container fade" id="residence">
             <!-- RESIDENTIAL FORM -->
@@ -735,7 +735,7 @@
                             </div>
                         </div>
                     </div>
-                </form><!-- END OF RESIDENTIAL FORM -->
+                </form><!--/RESIDENTIAL FORM -->
             </div>
             <div class="tab-pane container fade" id="elevate">
                 <!-- ELEVATE FORM -->
