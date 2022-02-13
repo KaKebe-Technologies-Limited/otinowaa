@@ -34,7 +34,7 @@
     <!-- Mobile Navigation -->
     <nav id="mobile-nav" class="navbar navbar-light navbar-expand-sm">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.php"><img src="images/logobg.png" width="80%" height="50px" alt=""></a>
+                <a class="navbar-brand" href="index.php"><img src="images/logobg.png" width="70%" height="30px" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -44,9 +44,9 @@
                                 <a class="nav-link text-dark text-bold" href="index.php">Dashboard</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-dark text-bold d-flex align-items-center" href="otw_cis.php" role="button" data-bs-toggle="dropdown">CIS</a>
+                                <a class="nav-link dropdown-toggle text-dark text-bold d-flex align-items-center" href="cis.php" role="button" data-bs-toggle="dropdown">CIS</a>
                                 <ul class="dropdown-menu">
-                                    <li class="list-unstyled"><a class="dropdown-item" href="otw_cis.php">Add Child</a>
+                                    <li class="list-unstyled"><a class="dropdown-item" href="cis.php">Add Child</a>
                                     </li class="list-unstyled"><a class="dropdown-item" href="view_all.php">View All</a></li>
                                 </ul>
                             </li>

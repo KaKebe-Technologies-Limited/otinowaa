@@ -1,6 +1,6 @@
 /*
 Stylesheet name: Main_style
-Author: Kakebe Technologies
+Author: @OlukMark/Kakebe Technologies
 */
 
 /*--------------------------------------------------------------
@@ -83,6 +83,11 @@ header {
 
 .header-title {
     padding: 10px;
+}
+
+.header-title a {
+    display: flex
+    justify-content: center;
 }
 
 #sidebar {
@@ -178,6 +183,10 @@ nav {
     color: var(--otw-dark-coral) !important;
 }
 
+.nav-pills > .nav-item {
+    border: 1px solid #dddd;
+}
+
 /*  Components
 	 ========================================================================== */
 .section-title {
@@ -196,12 +205,21 @@ nav {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
+/* Cards for screens <= 768px */
 @media screen and (max-width: 768px) {
     .card {
         width: 100%;
     }
 }
+/* cards for screns <= 992px */
+@media screen and (max-width: 992px) {
+    .card {
+        width: 40%;
 
+    }
+}
+
+/* Card links */
 .card-link {
     text-decoration: none;
     color: var(--black);

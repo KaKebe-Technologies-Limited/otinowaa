@@ -10,7 +10,7 @@
 <!--/Sidebar-->
 
 <!-- dashboard -->
-    <section id="dashboard" class="container col-8 my-4 py-5">
+    <section id="dashboard" class="container col-8 my-4 pt-5">
         <div class="mb-4 pt-4">
             <h4 class="title">Welcome back, Stephen!</h4>
             <h6>Today is Thursday, 20 January 2022</h6>
