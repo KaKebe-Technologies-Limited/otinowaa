@@ -51,6 +51,7 @@
                             <div class="form-group w-25">
                                 <div>Sex</div>
                                 <div class="mt-3 px-2">
+                                <div class="d-flex justify-content-center mt-4 px-2">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                         <label class="form-check-label" for="flexRadioDefault1">Male</label>
