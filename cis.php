@@ -9,24 +9,25 @@
 <?php include('includes/sidebar.php'); ?>
 <!--/Sidebar-->
 
-<section class="cis-form d-flex justify-content-center">
+<section class="cis-form col">
     <div class="wrapper col white-bg">
-        <div class="mb-4 pt-4 px-5">
-            <h4 class="section-title">Add Child</h4>
+        <div class="px-4">
+            <div class="mb-4 pt-4">
+                <h4 class="section-title">Add Child</h4>
+            </div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-pills px-5 p-sm-0 pb-sm-4" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="pill" href="#cbc">CBC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#residence">Residential</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#elevate">Elevate</a>
+                </li>
+            </ul>
         </div>
-        <!-- Nav tabs -->
-        <ul class="nav nav-pills px-5 p-sm-0 pb-sm-4" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="pill" href="#cbc">CBC</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="pill" href="#residence">Residential</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="pill" href="#elevate">Elevate</a>
-            </li>
-        </ul>
-
         <!-- Tab panes -->
         <div class="tab-content">
             <div class="tab-pane container active" id="cbc">
@@ -303,7 +304,7 @@
                                     <label for="date_of_death">Date of Death</label>
                                     <input type="date" id="date_of_death" class="input-control" name="date_of_death" value="" >
                                 </div>
-                                <div class="form-group w-45-ml-5">
+                                <div class="form-group w-45-ml-5 d-flex align-items-end">
                                     <input type="text" id="cause_of_death" class="input-control" placeholder="Cause of Death" name="cause_of_death" value="" >
                                     <label class="label-helper" for="cause_of_death">Cause of Death</label>
                                 </div>
@@ -324,7 +325,7 @@
                                     <label for="date_of_death">Date of Death</label>
                                     <input type="date" id="date_of_death" class="input-control" name="date_of_death" value="" >
                                 </div>
-                                <div class="form-group w-45-ml-5">
+                                <div class="form-group w-45-ml-5 d-flex align-items-end">
                                     <input type="text" id="cause_of_death" class="input-control" placeholder="Cause of Death" name="cause_of_death" value="" >
                                     <label class="label-helper" for="cause_of_death">Cause of Death</label>
                                 </div>
