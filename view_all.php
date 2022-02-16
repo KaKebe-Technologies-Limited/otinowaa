@@ -2,6 +2,7 @@
 <?php
     $title = "View All";
     require("includes/header.php");
+    require("includes/dbconnect.php");
 ?>
 <!--/Header-->
 

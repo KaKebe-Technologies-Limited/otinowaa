@@ -1,4 +1,5 @@
 <!--Header-->
+<?php  include('server.php'); ?>
 <?php
       $title = "CIS";
       require("includes/header.php");
@@ -68,6 +69,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- application of the php code starts here -->
                     <div class="form-row row gx-5">
                         <div class="d-flex flex-wrap justify-content-between">
                             <div class="col-sm-12 col-md-5 col-lg-3 d-flex flex-column">

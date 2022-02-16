@@ -24,6 +24,16 @@
     <title><?php echo $title; ?></title>
 </head>
 <body>
+
+<!-- session sections for messages after data is saved into the databse -->
+<?php if (isset($_SESSION['message'])): ?>
+	<div class="msg">
+		<?php 
+			echo $_SESSION['message']; 
+			unset($_SESSION['message']);
+		?>
+	</div>
+<?php endif ?>
     <header class="fixed-top w-100">
         <div class="header-title p-2">
             <a href="index.php"><img src="images/logobg.png" width="80%" height="50px" alt=""></a>

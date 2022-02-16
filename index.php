@@ -1,7 +1,10 @@
 <!--Header-->
+<?php  include('server.php'); ?>
+
 <?php
     $title = "Dashboard";
     require("includes/header.php");
+    require("includes/dbconnect.php");
 ?>
 <!--/Header-->
 
