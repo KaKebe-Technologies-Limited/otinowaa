@@ -16,7 +16,7 @@ CREATE TABLE cbc (
     cr_village varchar(255),
     origin_nationality varchar(255) NULL,
     origin_tribe varchar(255) NULL,
-    porigin_clan varchar(255) NULL,
+    origin_clan varchar(255) NULL,
     origin_religion varchar(255) NULL,
     school_name varchar(255) NULL,
     year_of_attendance varchar(255) NULL,
