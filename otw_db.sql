@@ -1,53 +1,177 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Feb 17, 2022 at 09:29 AM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 7.3.27
 
-CREATE TABLE cbc (
-    id int(10) unsigned NULL,
-    fullname varchar(255) NULL,
-    date_of_birth date NULL,
-    gender varchar(255) NULL,
-    pb_district varchar(255) NULL,
-    pb_country varchar(255) NULL,
-    pb_subcounty varchar(255) NULL,
-    pb_parish varchar(255) NULL,
-    pb_village varchar(255),
-    cr_district varchar(255) NULL,
-    cr_country varchar(255) NULL,
-    cr_subcounty varchar(255) NULL,
-    cr_parish varchar(255) NULL,
-    cr_village varchar(255),
-    origin_nationality varchar(255) NULL,
-    origin_tribe varchar(255) NULL,
-    origin_clan varchar(255) NULL,
-    origin_religion varchar(255) NULL,
-    school_name varchar(255) NULL,
-    year_of_attendance varchar(255) NULL,
-    last_grade_completed varchar(255),
-    guardian_name varchar (255),
-    guardian_relationship varchar(255) NULL,
-    guardian_residence varchar(255),
-    guardian_marital_status varchar(255),
-    guardian_no_of_dependants varchar(255),
-    guardian_occupation varchar(255),
-    guardian_contact_no int(10) NULL,
-    guardian_vulnerabilities varchar(255),
-    depandants_at_home varchar(255),
-    age int(10) NULL,
-    reason_for_admission varchar(255),
-    paternal_name varchar(255),
-    paternal_residence varchar(255),
-    paternal_relationship varchar(255),
-    paternal_date_of_death DATE,
-    paternal_cause_of_death varchar(255),
-    paternal_occupation varchar(255),
-    maternal_name varchar(255),
-    maternal_residence varchar(255),
-    maternal_relationship varchar(255),
-    maternal_date_of_death DATE,
-    maternal_cause_of_death varchar(255),
-    maternal_occupation varchar(255),
-    more_about_child varchar(255),
-    childs_fav_game varchar(255),
-    childs_fav_subject varchar(255),
-    childs_career_goals varchar(255),
-    siblings_at_path varchar(255),
-    PRIMARY KEY (id)
-)
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `otw_db`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cbc`
+--
+
+CREATE TABLE `cbc` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `fullname` varchar(32) DEFAULT NULL,
+  `date_of_birth` date DEFAULT NULL,
+  `gender` enum('Male','Female','','') DEFAULT NULL,
+  `pb_district` varchar(32) DEFAULT NULL,
+  `pb_county` varchar(32) DEFAULT NULL,
+  `pb_subcounty` varchar(32) DEFAULT NULL,
+  `pb_parish` varchar(32) DEFAULT NULL,
+  `pb_village` varchar(32) DEFAULT NULL,
+  `cr_district` varchar(32) DEFAULT NULL,
+  `cr_county` varchar(32) DEFAULT NULL,
+  `cr_subcounty` varchar(32) DEFAULT NULL,
+  `cr_parish` varchar(32) DEFAULT NULL,
+  `cr_village` varchar(32) DEFAULT NULL,
+  `nationality` varchar(32) DEFAULT NULL,
+  `tribe` varchar(32) DEFAULT NULL,
+  `clan` varchar(32) DEFAULT NULL,
+  `religion` varchar(32) DEFAULT NULL,
+  `school_name` varchar(32) DEFAULT NULL,
+  `year_of_attendance` date DEFAULT NULL,
+  `last_grade_completed` varchar(32) DEFAULT NULL,
+  `guardian_name` varchar(32) DEFAULT NULL,
+  `guardian_relationship` varchar(32) DEFAULT NULL,
+  `guardian_residence` varchar(32) DEFAULT NULL,
+  `guardian_marital_status` varchar(32) DEFAULT NULL,
+  `guardian_no_of_dependants` int(10) DEFAULT NULL,
+  `guardian_occupation` varchar(32) DEFAULT NULL,
+  `guardian_contact_no` int(10) DEFAULT NULL,
+  `guardian_vulnerabilities` varchar(255) DEFAULT NULL,
+  `dependants_at_home` varchar(32) DEFAULT NULL,
+  `age` int(10) DEFAULT NULL,
+  `reason_for_admission` varchar(255) DEFAULT NULL,
+  `paternal_name` varchar(255) DEFAULT NULL,
+  `paternal_residence` varchar(255) DEFAULT NULL,
+  `paternal_relationship` varchar(32) DEFAULT NULL,
+  `paternal_date_of_death` date DEFAULT NULL,
+  `paternal_cause_of_death` varchar(255) DEFAULT NULL,
+  `paternal_occupation` varchar(32) DEFAULT NULL,
+  `maternal_name` varchar(32) DEFAULT NULL,
+  `maternal_residence` varchar(32) DEFAULT NULL,
+  `maternal_relationship` varchar(32) DEFAULT NULL,
+  `maternal_date_of_death` date DEFAULT NULL,
+  `maternal_cause_of_death` varchar(255) DEFAULT NULL,
+  `maternal_occupation` varchar(32) DEFAULT NULL,
+  `more_about_child` varchar(255) DEFAULT NULL,
+  `childs_fav_game` varchar(255) DEFAULT NULL,
+  `childs_fav_subject` varchar(255) DEFAULT NULL,
+  `childs_career_goals` varchar(255) DEFAULT NULL,
+  `siblings_at_path` varchar(32) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `residential`
+--
+
+CREATE TABLE `residential` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `fullname` varchar(32) DEFAULT NULL,
+  `date_of_birth` date DEFAULT NULL,
+  `gender` enum('Male','Female','','') DEFAULT NULL,
+  `pb_district` varchar(32) DEFAULT NULL,
+  `pb_county` varchar(32) DEFAULT NULL,
+  `pb_subcounty` varchar(32) DEFAULT NULL,
+  `pb_parish` varchar(32) DEFAULT NULL,
+  `pb_village` varchar(32) DEFAULT NULL,
+  `cr_district` varchar(32) DEFAULT NULL,
+  `cr_county` varchar(32) DEFAULT NULL,
+  `cr_subcounty` varchar(32) DEFAULT NULL,
+  `cr_parish` varchar(32) DEFAULT NULL,
+  `cr_village` varchar(32) DEFAULT NULL,
+  `nationality` varchar(32) DEFAULT NULL,
+  `tribe` varchar(32) DEFAULT NULL,
+  `clan` varchar(32) DEFAULT NULL,
+  `religion` varchar(32) DEFAULT NULL,
+  `school_name` varchar(32) DEFAULT NULL,
+  `year_of_attendance` date DEFAULT NULL,
+  `last_grade_completed` varchar(32) DEFAULT NULL,
+  `guardian_name` varchar(32) DEFAULT NULL,
+  `guardian_relationship` varchar(32) DEFAULT NULL,
+  `guardian_residence` varchar(32) DEFAULT NULL,
+  `guardian_marital_status` varchar(32) DEFAULT NULL,
+  `guardian_no_of_dependants` int(10) DEFAULT NULL,
+  `guardian_occupation` varchar(32) DEFAULT NULL,
+  `guardian_contact_no` int(10) DEFAULT NULL,
+  `guardian_vulnerabilities` varchar(255) DEFAULT NULL,
+  `dependants_at_home` varchar(32) DEFAULT NULL,
+  `age` int(10) DEFAULT NULL,
+  `reason_for_admission` varchar(255) DEFAULT NULL,
+  `paternal_name` varchar(255) DEFAULT NULL,
+  `paternal_residence` varchar(255) DEFAULT NULL,
+  `paternal_relationship` varchar(32) DEFAULT NULL,
+  `paternal_date_of_death` date DEFAULT NULL,
+  `paternal_cause_of_death` varchar(255) DEFAULT NULL,
+  `paternal_occupation` varchar(32) DEFAULT NULL,
+  `maternal_name` varchar(32) DEFAULT NULL,
+  `maternal_residence` varchar(32) DEFAULT NULL,
+  `maternal_relationship` varchar(32) DEFAULT NULL,
+  `maternal_date_of_death` date DEFAULT NULL,
+  `maternal_cause_of_death` varchar(255) DEFAULT NULL,
+  `maternal_occupation` varchar(32) DEFAULT NULL,
+  `more_about_child` varchar(255) DEFAULT NULL,
+  `childs_fav_game` varchar(255) DEFAULT NULL,
+  `childs_fav_subject` varchar(255) DEFAULT NULL,
+  `childs_career_goals` varchar(255) DEFAULT NULL,
+  `siblings_at_path` varchar(32) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `user_id` int(11) NOT NULL,
+  `fullname` varchar(45) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  `contact_no` int(45) NOT NULL,
+  `date_of_birth` date NOT NULL,
+  `gender` varchar(45) NOT NULL,
+  `designation` varchar(45) NOT NULL,
+  `user_type` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `cbc`
+--
+ALTER TABLE `cbc`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `residential`
+--
+ALTER TABLE `residential`
+  ADD PRIMARY KEY (`id`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
