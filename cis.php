@@ -1,5 +1,5 @@
 <!--Header-->
-<?php  include('server.php'); ?>
+
 <?php
       $title = "CIS";
       require("includes/header.php");
