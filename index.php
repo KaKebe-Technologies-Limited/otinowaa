@@ -24,10 +24,10 @@
                     <a class="card-link stretched-link" href="cis.php">CIS</a>
                 </div>
                 <div class="card white-bg col-3">
-                    <a class="card-link stretched-link" target="blank" href="http://cafe.otwsystems.org/login">Otino Waa Cafe</a>
+                    <a class="card-link stretched-link" target="blank" href="http://cafe.otwsystems.org/login">Otino Waa Tower Cafe</a>
                 </div>
                 <div class="card white-bg col-3">
-                    <a class="card-link stretched-link" href="#">Redirect One</a>
+                    <a class="card-link stretched-link" href="http://cafe.otwsystems.org/login">Otino Waa Path Cafe</a>
                 </div>
                 <div class="card white-bg col-3">
                     <a class="card-link stretched-link" href="3">Redirect One</a>
