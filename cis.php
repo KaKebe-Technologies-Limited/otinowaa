@@ -1,5 +1,5 @@
 <!--Header-->
-<?php  include('server.php'); ?>
+
 <?php
       $title = "CIS";
       require("includes/header.php");
@@ -77,23 +77,23 @@
                                 <div class="col-heading">Place of Birth</div>
                                 <div class="mt-4">
                                     <div class="form-group">
-                                        <input type="text" id="district" class="input-control" placeholder="District" name="district" value="" >
+                                        <input type="text" id="district" class="input-control" placeholder="District" name="pb_district" value="" >
                                         <label class="label-helper" for="district">District</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" id="county" class="input-control" placeholder="County" name="county" value="" >
+                                        <input type="text" id="county" class="input-control" placeholder="County" name="pb_county" value="" >
                                         <label class="label-helper" for="county">County</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" id="sub-county" class="input-control" placeholder="Sub-county" name="sub_county" value="" >
+                                        <input type="text" id="sub-county" class="input-control" placeholder="Sub-county" name="pb_subcounty" value="" >
                                         <label class="label-helper" for="sub-county">Sub-county</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" id="parish" class="input-control" placeholder="Parish" name="parish" value="" >
+                                        <input type="text" id="parish" class="input-control" placeholder="Parish" name="pb_parish" value="" >
                                         <label class="label-helper" for="parish">Parish</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" id="village" class="input-control" placeholder="Village" name="village" value="" >
+                                        <input type="text" id="village" class="input-control" placeholder="Village" name="pb_village" value="" >
                                         <label class="label-helper" for="village">Village</label>
                                     </div>
                                 </div>
@@ -102,23 +102,23 @@
                                 <div class="col-heading">Current Residence</div>
                                 <div class="mt-4">
                                     <div class="form-group">
-                                        <input type="text" id="district" class="input-control" placeholder="District" name="district" value="" >
+                                        <input type="text" id="district" class="input-control" placeholder="District" name="cr_district" value="" >
                                         <label class="label-helper" for="district">District</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" id="county" class="input-control" placeholder="County" name="county" value="" >
+                                        <input type="text" id="county" class="input-control" placeholder="County" name="cr_county" value="" >
                                         <label class="label-helper" for="county">County</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" id="sub-county" class="input-control" placeholder="Sub-county" name="sub_county" value="" >
+                                        <input type="text" id="sub-county" class="input-control" placeholder="Sub-county" name="cr_subcounty" value="" >
                                         <label class="label-helper" for="sub-county">Sub-county</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" id="parish" class="input-control" placeholder="Parish" name="parish" value="" >
+                                        <input type="text" id="parish" class="input-control" placeholder="Parish" name="cr_parish" value="" >
                                         <label class="label-helper" for="parish">Parish</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" id="village" class="input-control" placeholder="Village" name="village" value="" >
+                                        <input type="text" id="village" class="input-control" placeholder="Village" name="cr_village" value="" >
                                         <label class="label-helper" for="village">Village</label>
                                     </div>
                                 </div>
@@ -175,23 +175,23 @@
                                     <label class="label-helper" for="guardian_name">Guardian Name</label>
                                 </div>
                                 <div class="form-group col-sm-12 col-md-5">
-                                    <input type="text" id="relationship" class="input-control" placeholder="Relationship:" name="relationship" value="" >
+                                    <input type="text" id="relationship" class="input-control" placeholder="Relationship:" name="guardian_relationship" value="" >
                                     <label class="label-helper" for="relationship">Relationship</label>
                                 </div>
                                 <div class="form-group col-sm-12 col-md-5">
-                                    <input type="text" id="marital_status" class="input-control" placeholder="Marital Status:" name="marital_status" value="" >
+                                    <input type="text" id="marital_status" class="input-control" placeholder="Marital Status:" name="guardian_marital_status" value="" >
                                     <label class="label-helper" for="marital_status">Marital Status</label>
                                 </div>
                                 <div class="form-group col-sm-12 col-md-5 d-flex align-items-end">
                                     <label for="number_pf_dependants">Number of Dependants</label>
-                                    <input type="number" id="number_of_dependants" class="input-control w-45" placeholder="6" name="number_of_dependants" value="" >
+                                    <input type="number" id="number_of_dependants" class="input-control w-45" placeholder="6" name="guardian_no_of_dependants" value="" >
                                 </div>
                                 <div class="form-group col-sm-12 col-md-5">
-                                    <input type="text" id="occupation" class="input-control" placeholder="Occupation:" name="occupattion" value="" >
+                                    <input type="text" id="occupation" class="input-control" placeholder="Occupation:" name="guardian_occupattion" value="" >
                                     <label class="label-helper" for="occupation">Occupation</label>
                                 </div>
                                 <div class="form-group col-sm-12 col-md-5">
-                                    <input type="text" id="contact-number" class="input-control" placeholder="Contact Number:" name="contact_number" value="" >
+                                    <input type="text" id="contact-number" class="input-control" placeholder="Contact Number:" name="guardian_contact_no" value="" >
                                     <label class="label-helper" for="contact_number">Contact Number</label>
                                 </div>
                             </div>
@@ -199,7 +199,7 @@
                         <div class="col-sm-5">
                             <div class="form-group w-100">
                                 <div class="col-heading">Vulnerabilities</div>
-                                <textarea class="input-control h-100 mt-4" id="" rows="3" placeholder="Provide vulnerabilitites for the child" name="vulnerabilities" value="" ></textarea>
+                                <textarea class="input-control h-100 mt-4" id="" rows="3" placeholder="Provide vulnerabilitites for the child" name="guardian_vulnerabilities" value="" ></textarea>
                             </div>
                         </div>
                     </div>
@@ -237,27 +237,27 @@
                                 </div>
                                 <div class="form-group w-100">
                                     <input type="text" id="residence" class="input-control" placeholder="Residence" name="residence" value="" >
-                                    <label class="label-helper" for="residence">Residence</label>
+                                    <label class="label-helper" for="paternal_residence">Residence</label>
                                 </div>
                                 <div class="form-group w-45-mr-5">
                                     <input type="text" id="relationship" class="input-control" placeholder="Relationship:" name="relationship" value="" >
-                                    <label class="label-helper" for="relationship">Relationship</label>
+                                    <label class="label-helper" for="paternal_relationship">Relationship</label>
                                 </div>
                                 <div class="form-group w-45-ml-5">
                                     <input type="text" id="marital_status" class="input-control" placeholder="Marital status" name="marital_status" value="" >
-                                    <label class="label-helper" for="marital_status">Marital Status</label>
+                                    <label class="label-helper" for="paternal_marital_status">Marital Status</label>
                                 </div>
                                 <div class="form-group d-flex align-items-end w-45-mr-5">
                                     <label for="number_pf_dependants">Number of Dependants</label>
-                                    <input type="number" id="number_of_dependants" class="input-control w-45" placeholder="6" name="number_of_dependants" value="" >
+                                    <input type="number" id="paternal_no_of_dependants" class="input-control w-45" placeholder="6" name="number_of_dependants" value="" >
                                 </div>
                                 <div class="form-group w-45-ml-5">
                                     <input type="text" id="occupation" class="input-control" placeholder="Occupation:" name="occupattion" value="" >
-                                    <label class="label-helper" for="occupation">Occupation</label>
+                                    <label class="label-helper" for="paternal_occupation">Occupation</label>
                                 </div>
                                 <div class="form-group w-45-mr-5">
                                     <input type="text" id="contact-number" class="input-control" placeholder="Contact Number:" name="contact_number" value="" >
-                                    <label class="label-helper" for="contact_number">Contact Number</label>
+                                    <label class="label-helper" for="paternal_contact_no">Contact Number</label>
                                 </div>
                             </div>
                         </div>
@@ -266,30 +266,30 @@
                             <div class="d-flex flex-wrap">
                             <div class="form-group w-100 mt-4">
                                     <input type="text" id="paternal_name" class="input-control" placeholder="Name:" name="paternal_name" value="" >
-                                    <label class="label-helper" for="paternal_name">Maternal Name</label>
+                                    <label class="label-helper" for="maternal_name">Maternal Name</label>
                                 </div>
                                 <div class="form-group w-100">
                                     <input type="text" id="residence" class="input-control" placeholder="Residence" name="residence" value="" >
-                                    <label class="label-helper" for="residence">Residence</label>
+                                    <label class="label-helper" for="maternal_residence">Residence</label>
                                 </div>
                                 <div class="form-group w-45-mr-5">
                                     <input type="text" id="relationship" class="input-control" placeholder="Relationship:" name="relationship" value="" >
-                                    <label class="label-helper" for="relationship">Relationship</label>
+                                    <label class="label-helper" for="maternal_relationship">Relationship</label>
                                 </div>
                                 <div class="form-group w-45-ml-5">
                                     <input type="text" id="marital_status" class="input-control" placeholder="Marital status" name="marital_status" value="" >
-                                    <label class="label-helper" for="marital_status">Marital Status</label>
+                                    <label class="label-helper" for="maternal_marital_status">Marital Status</label>
                                 </div>
                                 <div class="form-group d-flex align-items-end w-45-mr-5">
-                                <label for="number_pf_dependants">Number of Dependants</label>
-                                    <input type="number" id="number_of_dependants" class="input-control w-45" placeholder="6" name="number_of_dependants" value="" >
+                                    <label for="number_pf_dependants">Number of Dependants</label>
+                                    <input type="number" id="number_of_dependants" class="input-control w-45" placeholder="6" name="maternal_no_of_dependants" value="" >
                                 </div>
                                 <div class="form-group w-45-ml-5">
-                                    <input type="text" id="occupation" class="input-control" placeholder="Occupation:" name="occupattion" value="" >
+                                    <input type="text" id="occupation" class="input-control" placeholder="Occupation:" name="matrnal_occupation" value="" >
                                     <label class="label-helper" for="occupation">Occupation</label>
                                 </div>
                                 <div class="form-group w-45-mr-5">
-                                    <input type="text" id="contact-number" class="input-control" placeholder="Contact Number:" name="contact_number" value="" >
+                                    <input type="text" id="contact-number" class="input-control" placeholder="Contact Number:" name="maternal_contact_no" value="" >
                                     <label class="label-helper" for="contact_number">Contact Number</label>
                                 </div>
                             </div>
@@ -305,15 +305,15 @@
                                 </div>
                                 <div class="form-group w-45-mr-5">
                                     <label for="date_of_death">Date of Death</label>
-                                    <input type="date" id="date_of_death" class="input-control" name="date_of_death" value="" >
+                                    <input type="date" id="date_of_death" class="input-control" name="fathers_date_of_death" value="" >
                                 </div>
                                 <div class="form-group w-45-ml-5 d-flex align-items-end">
-                                    <input type="text" id="cause_of_death" class="input-control" placeholder="Cause of Death" name="cause_of_death" value="" >
+                                    <input type="text" id="cause_of_death" class="input-control" placeholder="Cause of Death" name="fathers_cause_of_death" value="" >
                                     <label class="label-helper" for="cause_of_death">Cause of Death</label>
                                 </div>
                                 <div class="form-group w-45-mr-5">
-                                    <input type="text" id="occupation" class="input-control" placeholder="Occupation(If Alive)" name="occupation" value="" >
-                                    <label class="label-helper" for="occupation">Occupation(If alive)</label>
+                                    <input type="text" id="occupation" class="input-control" placeholder="Occupation(If Alive)" name="fathers_occupation" value="" >
+                                    <label class="label-helper" for="fathers_occupation">Occupation(If alive)</label>
                                 </div>
                             </div>
                         </div>
@@ -326,14 +326,14 @@
                                 </div>
                                 <div class="form-group w-45-mr-5">
                                     <label for="date_of_death">Date of Death</label>
-                                    <input type="date" id="date_of_death" class="input-control" name="date_of_death" value="" >
+                                    <input type="date" id="date_of_death" class="input-control" name="mothers_date_of_death" value="" >
                                 </div>
                                 <div class="form-group w-45-ml-5 d-flex align-items-end">
-                                    <input type="text" id="cause_of_death" class="input-control" placeholder="Cause of Death" name="cause_of_death" value="" >
+                                    <input type="text" id="cause_of_death" class="input-control" placeholder="Cause of Death" name="mothers_cause_of_death" value="" >
                                     <label class="label-helper" for="cause_of_death">Cause of Death</label>
                                 </div>
                                 <div class="form-group w-45-mr-5">
-                                    <input type="text" id="occupation" class="input-control" placeholder="Occupation(If Alive)" name="occupation" value="" >
+                                    <input type="text" id="occupation" class="input-control" placeholder="Occupation(If Alive)" name="mothers_occupation" value="" >
                                     <label class="label-helper" for="occupation">Occupation(If alive)</label>
                                 </div>
                             </div>

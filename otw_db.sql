@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 17, 2022 at 09:29 AM
+-- Generation Time: Feb 20, 2022 at 05:16 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.3.27
 
@@ -63,15 +63,25 @@ CREATE TABLE `cbc` (
   `paternal_name` varchar(255) DEFAULT NULL,
   `paternal_residence` varchar(255) DEFAULT NULL,
   `paternal_relationship` varchar(32) DEFAULT NULL,
-  `paternal_date_of_death` date DEFAULT NULL,
-  `paternal_cause_of_death` varchar(255) DEFAULT NULL,
+  `paternal_marital_status` varchar(32) DEFAULT NULL,
+  `paternal_no_of_dependants` varchar(32) DEFAULT NULL,
   `paternal_occupation` varchar(32) DEFAULT NULL,
-  `maternal_name` varchar(32) DEFAULT NULL,
-  `maternal_residence` varchar(32) DEFAULT NULL,
+  `paternal_contact_no` varchar(32) DEFAULT NULL,
+  `maternal_name` varchar(255) DEFAULT NULL,
+  `maternal_residence` varchar(255) DEFAULT NULL,
   `maternal_relationship` varchar(32) DEFAULT NULL,
-  `maternal_date_of_death` date DEFAULT NULL,
-  `maternal_cause_of_death` varchar(255) DEFAULT NULL,
+  `maternal_marital_status` varchar(32) DEFAULT NULL,
+  `maternal_no_of_dependants` varchar(32) DEFAULT NULL,
   `maternal_occupation` varchar(32) DEFAULT NULL,
+  `maternal_contact_no` varchar(32) DEFAULT NULL,
+  `fathers_name` varchar(32) DEFAULT NULL,
+  `fathers_date_of_death` date DEFAULT NULL,
+  `fathers_cause_of_death` varchar(255) DEFAULT NULL,
+  `fathers_occupation` varchar(32) DEFAULT NULL,
+  `mothers_name` varchar(32) DEFAULT NULL,
+  `mothers_date_of_death` date DEFAULT NULL,
+  `mothers_cause_of_death` varchar(255) DEFAULT NULL,
+  `mothers_occupation` varchar(32) DEFAULT NULL,
   `more_about_child` varchar(255) DEFAULT NULL,
   `childs_fav_game` varchar(255) DEFAULT NULL,
   `childs_fav_subject` varchar(255) DEFAULT NULL,
@@ -121,15 +131,25 @@ CREATE TABLE `residential` (
   `paternal_name` varchar(255) DEFAULT NULL,
   `paternal_residence` varchar(255) DEFAULT NULL,
   `paternal_relationship` varchar(32) DEFAULT NULL,
-  `paternal_date_of_death` date DEFAULT NULL,
-  `paternal_cause_of_death` varchar(255) DEFAULT NULL,
+  `paternal_marital_status` varchar(32) DEFAULT NULL,
+  `paternal_no_of_dependants` varchar(32) DEFAULT NULL,
   `paternal_occupation` varchar(32) DEFAULT NULL,
-  `maternal_name` varchar(32) DEFAULT NULL,
-  `maternal_residence` varchar(32) DEFAULT NULL,
+  `paternal_contact_no` varchar(32) DEFAULT NULL,
+  `maternal_name` varchar(255) DEFAULT NULL,
+  `maternal_residence` varchar(255) DEFAULT NULL,
   `maternal_relationship` varchar(32) DEFAULT NULL,
-  `maternal_date_of_death` date DEFAULT NULL,
-  `maternal_cause_of_death` varchar(255) DEFAULT NULL,
+  `maternal_marital_status` varchar(32) DEFAULT NULL,
+  `maternal_no_of_dependants` varchar(32) DEFAULT NULL,
   `maternal_occupation` varchar(32) DEFAULT NULL,
+  `maternal_contact_no` varchar(32) DEFAULT NULL,
+  `fathers_name` varchar(32) DEFAULT NULL,
+  `fathers_date_of_death` date DEFAULT NULL,
+  `fathers_cause_of_death` varchar(255) DEFAULT NULL,
+  `fathers_occupation` varchar(32) DEFAULT NULL,
+  `mothers_name` varchar(32) DEFAULT NULL,
+  `mothers_date_of_death` date DEFAULT NULL,
+  `mothers_cause_of_death` varchar(255) DEFAULT NULL,
+  `mothers_occupation` varchar(32) DEFAULT NULL,
   `more_about_child` varchar(255) DEFAULT NULL,
   `childs_fav_game` varchar(255) DEFAULT NULL,
   `childs_fav_subject` varchar(255) DEFAULT NULL,
@@ -170,6 +190,34 @@ ALTER TABLE `cbc`
 --
 ALTER TABLE `residential`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`user_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `cbc`
+--
+ALTER TABLE `cbc`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `residential`
+--
+ALTER TABLE `residential`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
