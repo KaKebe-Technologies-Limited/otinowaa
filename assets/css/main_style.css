@@ -212,6 +212,7 @@ nav {
 
 
 /* Cards for screens >= 600px */
+
 @media screen and (max-width: 600px) {
     .card {
         width: 100%;

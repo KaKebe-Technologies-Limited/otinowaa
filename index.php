@@ -8,10 +8,6 @@
 ?>
 <!--/Header-->
 
-<!--Sidebar-->
-<?php include('includes/sidebar.php'); ?>
-<!--/Sidebar-->
-
 <!-- dashboard -->
     <section id="dashboard" class="container col-8 pt-5">
         <div class="row">
