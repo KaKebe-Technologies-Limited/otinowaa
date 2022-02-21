@@ -24,7 +24,7 @@
                     <a class="card-link stretched-link" href="cis.php">CIS</a>
                 </div>
                 <div class="card white-bg col-3">
-                    <a class="card-link stretched-link" href="#">Redirect One</a>
+                    <a class="card-link stretched-link" target="blank" href="http://cafe.otwsystems.org/">Otino Waa Cafe</a>
                 </div>
                 <div class="card white-bg col-3">
                     <a class="card-link stretched-link" href="#">Redirect One</a>
