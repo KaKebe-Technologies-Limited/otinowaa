@@ -5,7 +5,6 @@
       require("includes/header.php");
 ?>
 <!--/Header-->
-
 <!--Sidebar-->
 <?php include('includes/sidebar.php'); ?>
 <!--/Sidebar-->
