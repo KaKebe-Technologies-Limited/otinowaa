@@ -27,16 +27,16 @@
                     <a class="card-link stretched-link" target="blank" href="http://cafe.otwsystems.org/login">Otino Waa Tower Cafe</a>
                 </div>
                 <div class="card white-bg col-3">
-                    <a class="card-link stretched-link" href="http://cafe.otwsystems.org/login">Otino Waa Path Cafe</a>
+                    <a class="card-link stretched-link" href="http://cafe.otwsystems.org/login">Path Cafe</a>
                 </div>
                 <div class="card white-bg col-3">
-                    <a class="card-link stretched-link" href="3">Redirect One</a>
+                    <a class="card-link stretched-link" href="http://cafe.otwsystems.org/login">Clinic</a>
                 </div>
                 <div class="card white-bg col-3">
-                    <a class="card-link stretched-link" href="#">Redirect One</a>
+                    <a class="card-link stretched-link" href="http://cafe.otwsystems.org/login"> Compreshensive Secondary School</a>
                 </div>
                 <div class="card white-bg col-3">
-                    <a class="card-link stretched-link" href="#">Redirect One</a>
+                    <a class="card-link stretched-link" href="http://cafe.otwsystems.org/login">Primary School</a>
                 </div>
             </div>
         </div>
