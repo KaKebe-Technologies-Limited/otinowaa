@@ -1,0 +1,13 @@
+.container a{
+    width: 400px;
+    display: flex;
+    place-content: center;
+
+}
+.main{
+    margin: 2% 30%
+
+}
+a button{
+    width: 400px;
+}
